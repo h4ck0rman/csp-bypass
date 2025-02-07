@@ -1,0 +1,17 @@
+name: Running Commands Inside Pentest
+
+on:
+  push:
+    branches:
+      - "*"
+  workflow_dispatch:
+
+jobs:
+  list-files:
+    runs-on: self-hosted
+
+    steps:
+      - name: cooper is being a nice person
+        run: |
+          whoami
+          hostname
